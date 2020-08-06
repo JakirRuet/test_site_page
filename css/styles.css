@@ -1,70 +1,94 @@
-body{
-	margin: 0px;
-	padding: 0px;
-}
-
 * {
 	box-sizing: border-box;
 }
 
-#page_heading {
-	text-align: center;
-	margin-bottom: 20px;
+body {
+  font-size: 16px;
+  background-color: #f6b319;
+  font-family: 'Oxygen', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-
-.box_heading {
-	float: right;
-	padding: 0px 5px;
-	border: 1px solid black;
-	background-color: lightblue;
-	position: relative;
-	width: 100px;
-	text-align: center;
+/** HEADER **/
+#header-nav {
+  background-color: #61122f;
+  border-radius: 0;
+  border: 0;
 }
 
-p {
-	margin-top: 18px;
-	padding: 0px 5px;
+.navbar-brand {
+  padding-top: 20px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #f6b319;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
 }
 
-@media (min-width: 992px) {
-	.box {
-		border: 1px solid black;
-		background-color: gray;
-		overflow: auto;
-		width: 32%;
-		height: 150px;
-		margin: 0px 5px;
-		float: left;
-	}
+#nav-list {
+  margin-top: 10px;
+  text-align: center;
+}
+#nav-list a {
+  color: #f6b319;
+  border-bottom: 1px solid #fff;
+}
+#nav-list a:hover {
+	color: #61122f;
+  	background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+#header-nav button.navbar-toggle, #nheader-nav .icon-bar {
+  border: 1px solid #61122f;
+}
+#header-nav button.navbar-toggler {
+  clear: both;
+  margin-top: 20px;
+  background-color: #f6b319;
+}
+/* END HEADER */
+
+/*menu page*/
+#menu-categories-title{
+	color: #61122f;
+	margin: 15px 0;
+}	
+.food-details {
+	background-color: #61122f;
+	color: #f6b319;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+/*end menu page*/
+
+/*device type display*/
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  	
 }
 
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+/********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-	.box {
-		border: 1px solid black;
-		background-color: gray;
-		overflow: auto;
-		width: 48%;
-		height: 150px;
-		margin: 0px 5px;
-		float: left;
-	}
-
-	#box3 {
-		margin: 10px 5px 0px 5px;
-		width: 97%;
-	}
+	
 }
 
+/********** Extra small devices only **********/
 @media (max-width: 767px) {
-	.box {
-		border: 1px solid black;
-		background-color: gray;
-		overflow: auto;
-		width: 99%;
-		height: 150px;
-		margin: 0px 5px 10px 5px;
-		float: left;
-	}
+	
 }
